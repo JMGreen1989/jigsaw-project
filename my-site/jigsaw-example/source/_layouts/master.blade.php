@@ -6,7 +6,14 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
-    <body>
+    <body class="container">
+    <nav class="flex items-center justify-between">
+        <h1><a href="/">Jigsaw</a></h1>
+        <div class="flex items-center">
+        <div class="mr-4"> <a href="/about"></a>About</div>
+        <div class="mr-4"> <a href="/team"></a>Team</div>
+        </div>
+    </nav>
         @yield('body')
     </body>
 </html>
